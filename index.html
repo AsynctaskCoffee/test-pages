@@ -3,41 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basit HTML Sayfası</title>
+    <title>Kedikodu Knight Online Macro</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            scroll-behavior: smooth; /* Sayfada yumuşak kaydırma sağlar */
         }
 
         header {
             background: #333;
             color: #fff;
-            padding: 10px 0;
+            padding: 15px;
             text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         nav {
-            margin: 10px 0;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            background: #444;
+            padding: 10px 0;
+            position: sticky;
+            top: 50px;
+            z-index: 1000;
         }
 
         nav a {
-            margin: 0 15px;
-            color: #333;
+            color: #fff;
+            padding: 10px 20px;
             text-decoration: none;
             font-weight: bold;
+            margin: 0 10px;
         }
 
-        main {
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .container {
             padding: 20px;
-            background: #fff;
+            max-width: 1000px;
             margin: 20px auto;
-            max-width: 800px;
+            background: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 50px;
+            padding-bottom: 50px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 500px;
+            max-width: 1000px;
+            border: none;
         }
 
         footer {
@@ -52,27 +78,58 @@
 <body>
 
     <header>
-        <h1>Basit HTML Sayfası</h1>
+        <h1>Kedikodu Knight Online Macro</h1>
     </header>
 
     <nav>
-        <a href="#">Anasayfa</a>
-        <a href="#">Hakkımızda</a>
-        <a href="#">İletişim</a>
+        <a href="#assasin">Assasin</a>
+        <a href="#archer">Archer</a>
+        <a href="#melee">Melee</a>
+        <a href="#extras">Extras</a>
+        <a href="#kurulum">Kurulum</a>
     </nav>
 
-    <main>
-        <h2>Hoşgeldiniz</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lacinia euismod dui, at dapibus purus interdum ac. Integer nec lorem lectus. Quisque id feugiat quam. Cras et purus id arcu fermentum vestibulum non a urna. Aliquam erat volutpat. Duis cursus pretium tortor, a sagittis elit fringilla ac.</p>
-        
-        <p>Mauris vulputate lectus vitae libero vehicula, in tincidunt erat laoreet. Nulla facilisi. Sed et arcu volutpat, aliquam ligula id, laoreet ligula. Integer at tincidunt sapien. Nam vel purus lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec ac viverra eros, a ultricies est. Praesent interdum libero id felis cursus, a posuere sem dapibus.</p>
-        
-        <h3>Daha Fazla Bilgi</h3>
-        <p>Curabitur consectetur turpis nec dui tristique, vitae ullamcorper mi tincidunt. Proin sit amet nunc euismod, convallis neque eu, fringilla lectus. Aenean suscipit ligula eget magna consectetur, et pellentesque sapien bibendum. Sed dictum facilisis magna, ac tristique sapien consectetur in.</p>
-    </main>
+    <div class="container">
+        <section id="assasin">
+            <h2>Assasin</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lacinia euismod dui, at dapibus purus interdum ac. Integer nec lorem lectus. Quisque id feugiat quam. Cras et purus id arcu fermentum vestibulum non a urna. Aliquam erat volutpat. Duis cursus pretium tortor, a sagittis elit fringilla ac.</p>
+            <img src="assasin_image.jpg" alt="Assasin" style="width:100%; max-width:600px;">
+        </section>
+
+        <section id="archer">
+            <h2>Archer</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lacinia euismod dui, at dapibus purus interdum ac. Integer nec lorem lectus. Quisque id feugiat quam. Cras et purus id arcu fermentum vestibulum non a urna. Aliquam erat volutpat. Duis cursus pretium tortor, a sagittis elit fringilla ac.</p>
+            <img src="archer_image.jpg" alt="Archer" style="width:100%; max-width:600px;">
+        </section>
+
+        <section id="melee">
+            <h2>Melee</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lacinia euismod dui, at dapibus purus interdum ac. Integer nec lorem lectus. Quisque id feugiat quam. Cras et purus id arcu fermentum vestibulum non a urna. Aliquam erat volutpat. Duis cursus pretium tortor, a sagittis elit fringilla ac.</p>
+            <img src="melee_image.jpg" alt="Melee" style="width:100%; max-width:600px;">
+        </section>
+
+        <section id="extras">
+            <h2>Extras</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lacinia euismod dui, at dapibus purus interdum ac. Integer nec lorem lectus. Quisque id feugiat quam. Cras et purus id arcu fermentum vestibulum non a urna. Aliquam erat volutpat. Duis cursus pretium tortor, a sagittis elit fringilla ac.</p>
+            <img src="extras_image.jpg" alt="Extras" style="width:100%; max-width:600px;">
+        </section>
+
+        <section id="kurulum">
+            <h2>Kurulum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lacinia euismod dui, at dapibus purus interdum ac. Integer nec lorem lectus. Quisque id feugiat quam. Cras et purus id arcu fermentum vestibulum non a urna. Aliquam erat volutpat. Duis cursus pretium tortor, a sagittis elit fringilla ac.</p>
+            <img src="kurulum_image.jpg" alt="Kurulum" style="width:100%; max-width:600px;">
+        </section>
+
+        <section id="videos">
+            <h2>Kedikodu-Tech YouTube Videoları</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/videoseries?list=PLAYLIST_ID" allowfullscreen></iframe>
+            </div>
+        </section>
+    </div>
 
     <footer>
-        <p>&copy; 2024 Basit HTML Sayfası</p>
+        <p>&copy; 2024 Kedikodu-Tech</p>
     </footer>
 
 </body>
